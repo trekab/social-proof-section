@@ -19,8 +19,8 @@ body {
   padding: 1.5rem;
   background-image: url("./images/bg-pattern-top-mobile.svg"),
     url("./images/bg-pattern-bottom-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 .heading {
@@ -113,4 +113,75 @@ body {
   font-size: 1.0625rem;
   line-height: 22px;
   letter-spacing: -0.3px;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 1110px;
+    margin: auto;
+  }
+
+  .header-rating-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    max-width: 445px;
+  }
+
+  .header .heading,
+  .header .intro-summary {
+    text-align: start;
+  }
+
+  .header .heading {
+    font-size: 3.375rem;
+    line-height: 3rem;
+  }
+
+  .ratings {
+    max-width: 540px;
+    margin-right: 0;
+    margin-top: 6rem;
+  }
+
+  .rating-card {
+    min-width: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .rating-info {
+    margin-top: 0;
+  }
+
+  .rating-card:first-child {
+    margin-right: 5rem;
+  }
+
+  .rating-card:last-child {
+    margin-left: 5rem;
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .review-card{
+    max-width: 350px;
+    height: 234px;
+    margin: 0;
+  }
+
+  .review-card:first-child{
+    margin-bottom: 3rem;
+  }
+
+  .review-card:last-child{
+    margin-top: 3rem;
+  }
 }
